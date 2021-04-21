@@ -23,7 +23,7 @@ while True:
         for mail in out:
             out_string = "*Neuer Druckauftrag*\n\n"
             for key in mail:
-                if key == "Email":
+                if key == "Email:":
                     continue
                 out_string += "_"+key+"_"
                 out_string += "\n   "
