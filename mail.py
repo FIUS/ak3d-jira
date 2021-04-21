@@ -34,7 +34,7 @@ class Sender:
         id_list = mail_ids.split()
 
         if len(data[0].split()) > 0:
-            print('New Mails:')
+            print('New Mails')
         else:
             print('No Mails')
             return
