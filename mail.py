@@ -92,7 +92,7 @@ class Sender:
             lines = mail_body.split('\n')
             for line in lines:
                 infos = line.split(" ")
-                item[infos[0].strip()] = infos[1].strip()
+                item[infos[0].strip()] = ' '.join(infos[1:]).strip()
             if printName is not None:
                 item['file'] = printName
 
